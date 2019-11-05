@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../css/imagelightbox.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<h1>Responsive Image Gallery</h1>
+<h3>Resize the browser window to see the effect.</h3>
+<div class="content col-md-12">
+    <div class="row">
+        <div class="col-md-3 gallery">
+            <a href="../images/img_fjords.jpg" data-imagelightbox="img" data-title="Optional caption">
+                <img src="../images/img_fjords.jpg" style="width: 350px ; height: 250px; display: inline-block" alt="">
+            </a>
+            <p>Add a description of the image here</p>
+        </div>
+        <div class="col-md-3 gallery">
+            <a href="../images/img_forest.jpg" data-imagelightbox="img" data-title="Optional caption">
+                <img src="../images/img_forest.jpg" style="width: 350px ; height: 250px ;display: inline-block">
+            </a>
+            <p>Add a description of the image here</p>
+        </div>
+        <div class="col-md-3 gallery">
+            <a href="../images/img_lights.jpg" data-imagelightbox="img" data-title="Optional caption">
+                <img src="../images/img_lights.jpg" style="width: 350px ; height: 250px;display: inline-block">
+            </a>
+            <p>Add a description of the image here</p>
+        </div>
+        <div class="col-md-3 gallery">
+            <a href="../images/img_mountains.jpg" data-imagelightbox="img" data-title="Optional caption">
+                <img src="../images/img_mountains.jpg" style="width: 350px ; height: 250px;display: inline-block">
+            </a>
+            <p>Add a description of the image here</p>
+        </div>
+    </div>
+    <h5>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</h5>
+</div>
+<script type="text/javascript" src="../Js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="../Js/imagelightbox.min.js"></script>
+<script src="../Js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $('a[data-imagelightbox="img"]').imageLightbox();
+</script>
+</body>
+</html>
